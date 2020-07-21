@@ -79,6 +79,7 @@ def change_tense(text, to_tense, nlp=nlp):
     out = list()
     out.append(doc[0].text)
     words = []
+    #print(doc)
     for word in doc:
         words.append(word)
         if len(words) == 1:
@@ -141,3 +142,4 @@ def change_tense(text, to_tense, nlp=nlp):
     text_out = text_out.replace(" 's", "'s")  # fix posessive 's
 
     return text_out
+
